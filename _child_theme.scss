@@ -1,0 +1,68 @@
+// use this file to make own custom style rules in sass language
+//mixins
+
+@mixin blog($property) {
+	-webkit-transform: $property;
+	-ms-transform: $property;
+	transform: $property;
+	border: 5px white solid;
+	padding: 0 5px 0 5px;
+	width:250px;
+	text-align:center;
+	margin: auto;
+}
+@mixin main {
+	font-family:$font-family-sans-serif;
+	font-size:1.1rem;
+	background-color:$red-100;
+	a {
+		color:$indigo-700 !important;
+	}
+	a:hover{
+		color:$pink-500 !important;
+	}
+	h1{
+		font-family:$font-family-serif;
+		font-size:2rem;
+		text-align:center;
+	}
+	.navbar-brand {
+		font-family:$font-family-serif;
+		font-size:2rem;
+		text-align:center;
+		font-weight: bold;
+	}
+	.form-control {
+	background-color: white;
+}
+}
+body {
+	@include main;
+	.bg-primary, .dropdown-menu{
+		background-color:$yellow-100 !important;
+	}
+	#wrapper-footer-full {
+		background-color:$red-100;
+	}
+}
+.page-id-21 {
+	figcaption {
+		text-align: center;
+	}
+.wp-image-120 {
+	display: block;
+	margin: auto;
+}
+}
+.post-template-default {
+		.entry-title {
+			@include blog(rotate(3deg));
+	}
+	}
+.entry-meta {
+	display: none;
+}
+	.show {
+		display: block;
+	}
+
