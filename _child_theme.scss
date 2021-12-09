@@ -35,6 +35,7 @@
 	.form-control {
 	background-color: white;
 }
+
 }
 body {
 	@include main;
@@ -65,4 +66,28 @@ body {
 	.show {
 		display: block;
 	}
+#submit {
+	background-color: $darkred;
+	border-color: $darkred;
+}
+.postid-84 {
+.btn-secondary {
+	background-color: $darkred;
+	border-color: $darkred;
+	color: white !important;
+}
+}
 
+.postid-84, .postid-6 {
+	.kksr-stars, .kksr-legend {
+		display: none;
+	}
+}
+.dropdown-menu {
+	.active{
+	a {
+	color: $pink-900 !important;
+	font-weight: bold !important;
+		}
+	}
+}
